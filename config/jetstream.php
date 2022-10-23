@@ -67,7 +67,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Profile Photo Disk
+    | Profile Phosk
     |--------------------------------------------------------------------------
     |
     | This configuration value determines the default disk that will be used
