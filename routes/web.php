@@ -29,7 +29,7 @@ Route::middleware(['auth:sanctum,admin',
 ])->group(function () {
     Route::get('admin/dashboard', function () {
         return view('dashboard');
-    })->name('dashboard');
+    })->name('dashboard')->middleware('auth:admin');
 });
 
 Route::middleware(['auth:sanctum',
@@ -38,5 +38,5 @@ Route::middleware(['auth:sanctum',
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
-    })->name('dashboard');
+    })->name('dashboard')->middleware('auth:admin');
 });
